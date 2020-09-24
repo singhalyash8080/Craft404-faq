@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .faq {
+            max-width: 1358px;
+            margin: 0 auto;
+
+        }
+
+        .faq-container {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+
+        .faq-head {
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .accordian-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-family: Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        .acc-head1 {
+            display: flex;
+            align-items: center;
+            /* border: black solid 2px; */
+            width: 81%;
+
+        }
+
+        .accordion {
+            padding: 0px 20px;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            height: 80px;
+
+            background: #305BC9 0% 0% no-repeat padding-box;
+            box-shadow: 0px 12px 24px #00000029;
+            border-radius: 16px;
+            opacity: 1;
+        }
+
+        .acc-head-count {
+            font-size: 29px;
+        }
+
+        .acc-head-txt {
+            font-size: 21px;
+            margin-left: 15px;
+        }
+
+        .active {
+            border: none;
+            outline: none;
+        }
+
+        .panel {
+            color: whitesmoke;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+
+            background: #012656 0% 0% no-repeat padding-box;
+            border-radius: 0px 0px 16px 16px;
+            z-index: -1;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .panel p {
+            padding: 30px;
+        }
+
+
+
+
+        @media screen and (max-width: 771px) {
+
+            .acc-head-txt,
+            .panel p {
+                font-size: 15px;
+            }
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .acc-head2 {
+                display: none;
+            }
+
+            .acc-head-txt,
+            .panel p {
+                font-size: 11px;
+            }
+
+            .acc-head-count {
+                font-size: 21px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="faq">
+        <div class="faq-container">
+            <div class="faq-head">
+
+                <p>FAQs</p>
+
+            </div>
+
+
+            <!-- 1 -->
+            <button class="accordion accordian-head">
+
+                <div class="acc-head1">
+                    <div class=acc-head-count>1</div>
+
+                    <div class="acc-head-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor?</div>
+                </div>
+
+                <div class="acc-head2">
+                    <i class="fa fa-angle-down" style="font-size:29px"></i>
+                </div>
+
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </p>
+            </div>
+            <br>
+
+            <!-- 2 -->
+            <button class="accordion accordian-head">
+
+                <div class="acc-head1">
+                    <div class=acc-head-count>2</div>
+
+                    <div class="acc-head-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor?</div>
+                </div>
+
+                <div class="acc-head2">
+                    <i class="fa fa-angle-down" style="font-size:29px"></i>
+                </div>
+
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </p>
+            </div>
+            <br>
+
+            <!-- 3 -->
+            <button class="accordion accordian-head">
+
+                <div class="acc-head1">
+                    <div class=acc-head-count>3</div>
+
+                    <div class="acc-head-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor?</div>
+                </div>
+
+                <div class="acc-head2">
+                    <i class="fa fa-angle-down" style="font-size:29px"></i>
+                </div>
+
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </p>
+            </div>
+            <br>
+
+            <!-- 4 -->
+            <button class="accordion accordian-head">
+
+                <div class="acc-head1">
+                    <div class=acc-head-count>4</div>
+
+                    <div class="acc-head-txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor?</div>
+                </div>
+
+                <div class="acc-head2">
+                    <i class="fa fa-angle-down" style="font-size:29px"></i>
+                </div>
+
+            </button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </p>
+            </div>
+            <br>
+
+
+        </div>
+    </section>
+
+</body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+
+
+            var angle = this.children[1]
+
+            console.log(angle)
+
+
+            if (angle.innerHTML == '<i class="fa fa-angle-up" style="font-size:29px"></i>') {
+                angle.innerHTML = '<i class="fa fa-angle-down" style="font-size:29px"></i>'
+            }
+            else {
+                angle.innerHTML = '<i class="fa fa-angle-up" style="font-size:29px"></i>'
+            }
+
+
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+
+                panel.style.border = 'none';
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+
+                panel.style.border = '3px solid #305BC9';
+
+                panel.style.position = 'relative';
+
+                panel.style.bottom = '10px';
+
+            }
+        });
+    }
+</script>
+
+</html>
