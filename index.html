@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        body {
+            background: #012656;
+        }
+
+        /* faq css */
+
         .faq {
             max-width: 1358px;
             margin: 0 auto;
@@ -36,6 +42,7 @@
             text-align: center;
             font-size: 80px;
             font-weight: bold;
+            color: white;
         }
 
         .accordian-head {
@@ -106,17 +113,75 @@
             padding: 30px;
         }
 
+        /* faq css end */
 
+        /* coordinator css  */
 
-
-        @media screen and (max-width: 771px) {
-
-            .acc-head-txt,
-            .panel p {
-                font-size: 15px;
-            }
+        .coordinator {
+            max-width: 1400px;
+            /* border: 2px solid yellow; */
+            margin: 0 auto;
 
         }
+
+        .coordinator-container {
+            max-width: 80vw;
+            /* border: pink solid 2px; */
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .coordinator-txt {
+            color: white;
+            font-size: 40px;
+            width: 40%;
+            /* border: red solid 2px; */
+        }
+
+        .coordinator-box {
+            width: 50%;
+            background: #305BC9;
+            box-shadow: 0px 40px 80px #00000038;
+            border-radius: 24px;
+            opacity: 1;
+            /* padding:20px; */
+            /* height:250px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .coordinator-box-contain {
+            /* widows: 100%;*/
+            /* padding: 50px; */
+            display: flex;
+            align-items: center;
+            /* border:white 2px solid; */
+            font-size: 22px;
+            color: white;
+            justify-content: space-between;
+        }
+
+        .coord1 {
+            text-align: center;
+        }
+
+        .coord2 {
+            text-align: center;
+        }
+
+        .line {
+            border: 0.1px white solid;
+            height: 200px;
+        }
+
+        /* coordinator css end */
+
+
+        /* faq media queries */
 
         @media screen and (max-width: 500px) {
 
@@ -134,6 +199,156 @@
             }
 
         }
+
+        @media screen and (max-width: 771px) {
+
+            .acc-head-txt,
+            .panel p {
+                font-size: 15px;
+            }
+
+            .faq-head{
+                font-size:60px;
+            }
+
+        }
+
+        @media screen and (max-width: 430px){
+            
+            .acc-head-txt,
+            .panel p {
+                font-size: 12px;
+            }
+
+            .faq-head{
+                font-size:40px;
+            }
+        }
+
+        /* faq media queries end */
+
+        /* coordinator media queries */
+
+        @media screen and (max-width: 1400px) {
+
+
+            .coordinator-txt {
+                font-size: 35px;
+            }
+
+            .coordinator-box-contain {
+                font-size: 19px;
+            }
+
+            .line {
+                height: 180px;
+            }
+
+        }
+
+        @media screen and (max-width: 1220px) {
+
+
+            .coordinator-txt {
+                font-size: 30px;
+            }
+
+            .coordinator-box-contain {
+                font-size: 16px;
+            }
+
+            .line {
+                height: 150px;
+            }
+
+        }
+
+        @media screen and (max-width: 1060px) {
+
+
+            .coordinator-txt {
+                font-size: 25px;
+            }
+
+            .coordinator-box-contain {
+                font-size: 13px;
+            }
+            .line {
+                height: 130px;
+            }
+
+        }
+
+        @media screen and (max-width: 880px) {
+
+
+            .coordinator-txt {
+                font-size: 22px;
+            }
+
+            .coordinator-box-contain {
+                font-size: 11px;
+            }
+            .line {
+                height: 110px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+
+            .coordinator-container{
+                flex-direction: column;
+            }
+
+            .coordinator-txt{
+                width:100%;
+
+                font-size:37px;
+
+                margin-bottom:30px;
+                text-align: center;
+            }
+
+            .coordinator-box{
+                width: 100%;
+            }
+
+            .coordinator-box-contain{
+                font-size:20px;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            .coordinator-box-contain{
+                flex-direction: column;
+            }
+
+            .line{
+                margin-top:20px;
+                margin-bottom:20px;
+                height:0;
+                width:80%;
+            }
+        }
+
+        @media screen and (max-width: 511px){
+            .coordinator-txt{
+                font-size:28px;
+            }
+
+            .coordinator-box-contain{
+                font-size:18px;
+            }
+        }
+
+        @media screen and (max-width: 392px){
+
+            .coordinator-txt{
+                font-size:22px;
+            }
+        }
+
+        /* coordinator media queries end */
     </style>
 
 </head>
@@ -255,7 +470,40 @@
 
 
         </div>
+
     </section>
+
+    <br><br><br>
+
+    <section class="coordinator">
+
+        <div class="coordinator-container">
+
+            <div class="coordinator-txt" style="font-weight:600;">
+                Still got doubts?<br> Contact our coordinators
+            </div>
+
+            <div class="coordinator-box">
+
+                <div class="coordinator-box-contain">
+                    <div class="coord1">
+                        Coordinator Name 1 <br>
+                        Phone Number 1
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="coord2">
+                        Coordinator Name 2 <br>
+                        Phone Number 2
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br>
 
 </body>
 
@@ -270,7 +518,7 @@
 
             var angle = this.children[1]
 
-            console.log(angle)
+            // console.log(angle)
 
 
             if (angle.innerHTML == '<i class="fa fa-angle-up" style="font-size:29px"></i>') {
